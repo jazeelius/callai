@@ -1,3 +1,34 @@
-export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const Router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <div>
+        <h1>Welcome to the home page</h1>
+        <NavLink className="text-blue-500" to="/product">
+          Go to product page
+        </NavLink>
+      </div>
+    ),
+  },
+
+  {
+    path: "/product",
+    element: (
+      <div>
+        <h1>Welcome to the product page</h1>
+        <NavLink className="text-blue-500" to="/">
+          Go to home page
+        </NavLink>
+      </div>
+    ),
+  },
+]);
+
+function App() {
+  return <RouterProvider router={Router} />;
 }
+
+export default App;
