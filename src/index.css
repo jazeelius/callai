@@ -23,3 +23,18 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+.css-1ktptoh {
+    font-family: var(--chakra-fonts-heading);
+    font-weight: var(--chakra-fontWeights-bold);
+    letter-spacing: -0.05em;
+    color: transparent;
+    background: linear-gradient(180deg, #555, #000);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-bottom: 0px;
+    line-height: 1.33;
+    font-size: var(--chakra-fontSizes-2xl);
+}
