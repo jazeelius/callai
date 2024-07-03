@@ -1,34 +1,29 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+  NavLink,
+} from "react-router-dom";
 
-const Router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <div>
-        <h1>Welcome to the home page</h1>
-        <NavLink className="text-blue-500" to="/product">
-          Go to product page
-        </NavLink>
-      </div>
-    ),
-  },
+//Pages
+import LandingPage from "./pages/LandingPage";
+import Test from "./pages/Test";
 
-  {
-    path: "/product",
-    element: (
-      <div>
-        <h1>Welcome to the product page</h1>
-        <NavLink className="text-blue-500" to="/">
-          Go to home page
-        </NavLink>
-      </div>
-    ),
-  },
-]);
+//Layout
+import RootLayout from "./Layouts/RootLayout";
+
+const Router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout/>}>
+      <Route index element={<LandingPage/>}/>
+      <Route path="test" element={<Test/>}/>
+    </Route>
+  )
+);
 
 function App() {
-  return <RouterProvider router={Router} />;
+  return(<RouterProvider router={Router} />); 
 }
 
 export default App;
