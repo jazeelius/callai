@@ -1,13 +1,27 @@
-import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
 
 function RootLayout() {
   return (
     <>
-    {/* Remix */}
+      {/* Remix */}
+      <header className="bg-white">
+        <nav className="">
+          <div>
+            <NavLink to="/">
+              <h2 className="font-[Poppins] text-black">Callai</h2>
+            </NavLink>
+            <div>
+              <NavLink to="/test"></NavLink>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <Outlet />
+      </main>
 
-
-        {/* <div className='root-layout'>
+      {/* <div className='root-layout'>
       <div className='root-layout'>
   <header className='max-w-screen-xl mx-auto p-4'>
     <nav className='bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-800 flex items-center justify-between'>
@@ -34,11 +48,7 @@ function RootLayout() {
 </div>
     </div> */}
     </>
-
-
-
-    
-  )
+  );
 }
 
-export default RootLayout
+export default RootLayout;
