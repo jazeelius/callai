@@ -4,10 +4,12 @@ import Endorsements from '../components/Endorsements'
 
 function LandingPage() {
   return (
-    <main>
-        <Hero/>
-        <Endorsements/>
-    </main>
+    <>
+    <Hero/>
+    <Endorsements/>
+    </>
+        
+ 
   )
 }
 
