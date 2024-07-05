@@ -8,7 +8,7 @@ function Hero() {
     {/* <!-- Title --> */}
     <div class="mt-10 mb-9 max-w-2xl text-center mx-auto">
       <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:black">
-        Automate your calls with
+        Automate your sales calls with
         <span class="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent"> AI</span>
       </h1>
     </div>
