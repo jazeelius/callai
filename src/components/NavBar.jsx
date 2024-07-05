@@ -12,7 +12,7 @@ function NavBar() {
         </NavLink>
         <div className="hidden sm:block text-center font-sans font-medium text-xs sm:text-base">
           <NavLink
-            to="/features"
+            to="/test"
             className="px-3 text-black"
           >
             features
