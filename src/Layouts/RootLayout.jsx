@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar";
 function RootLayout() {
   return (
     <>
-    <div className="min-h-screen flex flex-col bg-[#FAFAFA] h-screen text-white text-sm sm:text-base ">
+    <div className="min-h-screen flex flex-col bg-[#FAFAFA] text-white text-sm sm:text-base ">
         {/* Remix */}
         <NavBar />
         <main>
