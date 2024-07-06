@@ -2,12 +2,11 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
   <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
 
     {/* <!-- Title --> */}
-    <div class="mt-10 mb-9 max-w-2xl text-center mx-auto">
-      <h1 class="block antialiased font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:black">
+    <div class="mt-32 mb-9 max-w-2xl text-center mx-auto">
+      <h1 class="block antialiased font-bold text-[#2D2D2D] text-4xl md:text-5xl lg:text-6xl dark:black">
         Automate your sales calls with
         <span class="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent"> AI</span>
       </h1>
@@ -29,7 +28,8 @@ function Hero() {
         <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
       </a>
       
-    </div>
+      
+  
     {/* <!-- End Buttons --> */}
 
     

@@ -3,112 +3,33 @@ import React from "react";
 function Features() {
   return (
     <>
-      <div className="bg-[#FAFAFA]">
-        <dd class="order-first text-3xl font-semibold tracking-tight text-black bg-gradient-to-b from-slate-400 to-black text-transparent bg-clip-text sm:text-5xl text-center pt-36">
-          <span class="animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-transactions)] before:content-[counter(num)]">
-            {" "}
-         
-            <span class="sr-only ">%</span>% more sales{" "}
-
-            
-          </span>
-        </dd>
+      
         
 
-        <div class="flex flex-wrap justify-center mt-10">
-          {/* <!-- card 3 --> */}
-          <div class="p-4 max-w-sm">
-            <div class="flex rounded-lg border-2 h-full backdrop-blur-md bg-white bg-opacity-30 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <h2 class="text-black text-lg font-medium">
-                  Feature 3
-                </h2>
-              </div>
-              <div class="flex flex-col justify-between flex-grow">
-                <p class="leading-relaxed text-base text-gray-300">
-                  Lorem ipsum dolor sit amet. In quos laboriosam non neque
-                  eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum
-                  inventore et maxime amet.
-                </p>
-                
-              </div>
-            </div>
-          </div>{/* <!-- card 3 --> */}
-          <div class="p-4 max-w-sm">
-            <div class="flex rounded-lg border-2 h-full backdrop-blur-md bg-white bg-opacity-30 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <h2 class="text-black text-lg font-medium">
-                  Feature 3
-                </h2>
-              </div>
-              <div class="flex flex-col justify-between flex-grow">
-                <p class="leading-relaxed text-base text-gray-300">
-                  Lorem ipsum dolor sit amet. In quos laboriosam non neque
-                  eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum
-                  inventore et maxime amet.
-                </p>
-                
-              </div>
-            </div>
-          </div>{/* <!-- card 3 --> */}
-          <div class="p-4 max-w-sm">
-            <div class="flex rounded-lg border-2 h-full backdrop-blur-md bg-white bg-opacity-30 p-8 flex-col">
-              <div class="flex items-center mb-3">
-                <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <h2 class="text-black text-lg font-medium">
-                  Feature 3
-                </h2>
-              </div>
-              <div class="flex flex-col justify-between flex-grow">
-                <p class="leading-relaxed text-base text-gray-300">
-                  Lorem ipsum dolor sit amet. In quos laboriosam non neque
-                  eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum
-                  inventore et maxime amet.
-                </p>
-                
-              </div>
-            </div>
-          </div>
+        <div id="features" className="col-span-1 sm:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-black">
 
-          
+        <div class="col-span-1 sm:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="p-4 border rounded-lg text-center">
+            <h2 class="text-4xl font-bold">571</h2>
+            <p class="text-lg">Igbo definitions</p>
+            <p className="pt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat impedit optio atque, id culpa ipsum in pariatur recusandae dolor ut eligendi quas a sint. Nam unde perspiciatis ea laborum.
+            </p>
+          </div>
+          <div class="p-4 border rounded-lg text-center">
+            <h2 class="text-4xl font-bold">464</h2>
+            <p class="text-lg">Igbo proverbs</p>
+            <p className="pt-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil laudantium deserunt ipsam veritatis earum quisquam cum maxime, assumenda quis facilis, hic exercitationem nulla quidem numquam non odit! Hic, at veniam.
+            </p>
+          </div>
+          <div class="p-4 border rounded-lg text-center">
+            <h2 class="text-4xl font-bold">30,942</h2>
+            <p class="text-lg">Bible verses</p>
+            <p className="pt-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem commodi quam eligendi tempora earum dolores ipsum harum aliquid aperiam minima dolorum cumque, amet eaque quos obcaecati. Cumque earum ducimus ad.
+            </p>
+          </div>
         </div>
       </div>
     </>
