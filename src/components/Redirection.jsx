@@ -9,7 +9,7 @@ function Redirection() {
       <div class="mt-10 mb-9 max-w-2xl text-center mx-auto w-max">
         <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 font-bold text-[#2D2D2D] text-4xl  dark:black">
         {/* font-bold text-[#2D2D2D] text-4xl  dark:black */}
-          Start Earning <span>Today</span> 
+          Start Earning <span>Today &nbsp;</span>
         </h1>
       </div>
       {/* <!-- End Title --> */}
