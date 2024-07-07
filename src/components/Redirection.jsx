@@ -6,8 +6,9 @@ function Redirection() {
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10 mt-11">
       {/* <!-- Title --> */}
       
-      <div class="mt-10 mb-9 max-w-2xl text-center mx-auto">
-        <h1 class="block antialiased font-bold text-[#2D2D2D] text-4xl  dark:black">
+      <div class="mt-10 mb-9 max-w-2xl text-center mx-auto w-max">
+        <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 font-bold text-[#2D2D2D] text-4xl  dark:black">
+        {/* font-bold text-[#2D2D2D] text-4xl  dark:black */}
           Start Earning <span>Today</span> 
         </h1>
       </div>
