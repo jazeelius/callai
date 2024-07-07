@@ -11,6 +11,7 @@ function LandingPage() {
     <>
       <Hero />
       <Endorsements />
+      
       <h2 id="features" className="text-3xl font-semibold tracking-tight bg-gradient-to-b from-slate-400 to-black text-transparent bg-clip-text sm:text-5xl text-center pb-16 pt-28">
         100% more sales
       </h2>

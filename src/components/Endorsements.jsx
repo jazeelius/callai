@@ -12,24 +12,24 @@ function Endorsements() {
         
 
             <div className="has-tooltip group relative flex justify-center ">
-            <a href="#" className="flex justify-center items-center m-5 text-5xl hover:text-gray-500 ">
+            <div href="#" className="flex justify-center items-center m-5 text-5xl hover:text-gray-500 ">
             <i className="fa-brands fa-salesforce "></i>    
             <span class="absolute top-20 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">SalesForce</span>                                           
-            </a>
+            </div>
             </div>
 
             <div className="group relative flex justify-center">
-            <a href="#" className="flex justify-center items-center m-5 text-5xl hover:text-gray-500">
+            <div href="#" className="flex justify-center items-center m-5 text-5xl hover:text-gray-500">
             <i className="fa-brands fa-google"></i>    
             <span class="absolute top-20 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">Google</span>                                           
-            </a>
+            </div>
             </div>
 
             <div className="group relative flex justify-center">
-            <a href="#" className="flex justify-center items-center m-5 text-5xl hover:text-gray-500">
+            <div href="#" className="flex justify-center items-center m-5 text-5xl hover:text-gray-500">
             <i className="fa-brands fa-stripe"></i>    
             <span class="absolute top-20 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">Stripe</span>                                           
-            </a>
+            </div>
             </div>
             
             {/* <a href="#" className="flex justify-center items-center m-5 text-5xl hover:text-black">
