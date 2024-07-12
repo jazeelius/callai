@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -22,10 +22,14 @@ function NavBar() {
           </h2>
         </NavLink>
         <div className="hidden md:block text-center font-sans font-medium text-xs sm:text-base">
-        <HashLink className="px-3 text-black" smooth to="/#features">
+          <HashLink className="px-3 text-black" smooth to="/#features">
             features
           </HashLink>
-          <HashLink className="px-3 text-black" smooth to="/#endorsements-title">
+          <HashLink
+            className="px-3 text-black"
+            smooth
+            to="/#endorsements-title"
+          >
             endorsements
           </HashLink>
           <HashLink className="px-3 text-black" smooth to="/#footer">

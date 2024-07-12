@@ -8,11 +8,11 @@ function RecordMessage({ handleStop }) {
       audio
       onStop={handleStop}
       render={({ status, startRecording, stopRecording }) => (
-        <div className="mt-2">
+        <div className="m-auto">
           <button
             onMouseDown={startRecording}
             onMouseUp={stopRecording}
-            className="bg-black p-4 rounded-full text-white"
+            className="bg-slate-900 p-4 rounded-full text-white transition-all hover:bg-gray-800"
           >
             <RecordIcon
               classText={
@@ -22,7 +22,6 @@ function RecordMessage({ handleStop }) {
               }
             />
           </button>
-          <p className="mt-2 text-black font-light">{status}</p>
         </div>
       )}
     />

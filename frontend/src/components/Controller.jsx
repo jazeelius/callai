@@ -6,6 +6,25 @@ import RecordMessage from "./RecordMessage";
 const Controller = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState([]);
+  const [isResetting, setIsResetting] = useState(false);
+  const resetConversation = async () => {
+    setIsResetting(true);
+    await axios
+      .get("http://localhost:8000/reset")
+      .then((res) => {
+        if (res.status == 200) {
+          setMessages([]);
+        } else {
+          console.error(
+            "There was an error with the API request to the backend"
+          );
+        }
+      })
+      .catch((err) => {
+        console.error(err.message);
+      });
+    setIsResetting(false);
+  };
 
   function createBlobURL(data) {
     const blob = new Blob([data], { type: "audio/mpeg" });
@@ -58,13 +77,13 @@ const Controller = () => {
   };
 
   return (
-    <div className="h-screen overflow-y-hidden">
+    <div className="h-screen overflow-y-hidden text-slate-900">
       {/* Title */}
-      <Title setMessages={setMessages} />
+      {/* <Title setMessages={setMessages} /> */}
 
       <div className="flex flex-col justify-between h-full overflow-y-scroll pb-96">
         {/* Conversation */}
-        <div className="mt-5 px-5">
+        <div className="mt-20 px-5">
           {messages.map((audio, index) => {
             return (
               <div
@@ -108,10 +127,32 @@ const Controller = () => {
         </div>
 
         {/* Recorder */}
-        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-sky-500 to-green-500">
-          <div className="flex justify-center items-center w-full">
-            <div>
+        <div className="fixed bottom-0 w-full py-6  ">
+          <div className="flex items-center justify-center  w-full  text-center">
+            <div className="flex items-center justify-center gap-2 w-full px-4">
               <RecordMessage handleStop={handleStop} />
+
+              <button
+                onClick={resetConversation}
+                className={`transition-all duration-300 text-blue-300 hover:text-pink-500 bg-slate-900 p-4 rounded-full ml-[-8.5%] ${
+                  isResetting ? "animate-pulse" : ""
+                }`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
