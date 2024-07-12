@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Title from "./Title";
+
 import axios from "axios";
 import RecordMessage from "./RecordMessage";
 
@@ -12,7 +12,7 @@ const Controller = () => {
     await axios
       .get("http://localhost:8000/reset")
       .then((res) => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           setMessages([]);
         } else {
           console.error(
